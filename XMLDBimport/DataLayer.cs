@@ -34,6 +34,7 @@ namespace XMLDBimport
     [DbConfigurationType(typeof(SQLAzureConfiguration))]
     public class EFContext : DbContext
     {
+
         public EFContext() : base("DBConnection") { }
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductSpecification> ProductSpecifications { get; set; }
